@@ -1,0 +1,8 @@
+<!-- icons.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <!-- Close Icon -->
+    <symbol id="close-icon" viewBox="0 0 24 24">
+        <path
+            d="M19.71 18.29a1 1 0 0 1-1.42 1.42L12 13.41l-6.29 6.3a1 1 0 0 1-1.42-1.42L10.59 12 4.3 5.71a1 1 0 0 1 1.42-1.42L12 10.59l6.29-6.3a1 1 0 0 1 1.42 1.42L13.41 12z" />
+    </symbol>
+</svg>
