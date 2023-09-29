@@ -1,59 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Toaster</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Success Toaster -->
     <div class="toaster-container">
-        <svg class="close-icon">
-            <use xlink:href="icons.svg#close-icon"></use>
-        </svg>
-        <svg id="check-icon" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512">
-            <path
-                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
-        </svg>
-        <p class="toaster-text">
-            <strong>Success!</strong>
-            <small>Your changes are saved successfully</small>
-        </p>
-        <div class="progress-bar" id="success-bottom-border"></div>
+      <svg class="close-icon">
+        <use xlink:href="icons.svg#close-icon"></use>
+      </svg>
+      <svg
+        id="check-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        height="2em"
+        viewBox="0 0 512 512"
+      >
+        <path
+          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+        />
+      </svg>
+      <p class="toaster-text">
+        <strong>Success!</strong>
+        <small>Your changes are saved successfully</small>
+      </p>
+      <div class="progress-bar" id="success-bottom-border"></div>
+    </div>
+    <!-- Warning toaster -->
+    <div class="toaster-container">
+      <svg class="close-icon">
+        <use xlink:href="icons.svg#close-icon"></use>
+      </svg>
+      <svg
+        fill="#fc970a"
+        height="2em"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        stroke="#fc970a"
+      >
+        <path
+          d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2ZM11,7a1,1,0,0,1,2,0v6a1,1,0,0,1-2,0Zm1,12a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,19Z"
+        ></path>
+      </svg>
+      <p class="toaster-text">
+        <strong>Warning!</strong>
+        <small>You are about to change a life-death system</small>
+      </p>
+      <div class="progress-bar" id="warn-bottom-border"></div>
     </div>
     <!-- Error toaster -->
     <div class="toaster-container">
-        <svg class="close-icon">
-            <use xlink:href="icons.svg#close-icon"></use>
-        </svg>
-        <svg fill="#fc970a" height="2em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#fc970a">
-            <path
-                d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2ZM11,7a1,1,0,0,1,2,0v6a1,1,0,0,1-2,0Zm1,12a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,19Z">
-            </path>
-        </svg>
-        <p class="toaster-text">
-            <strong>Warning!</strong>
-            <small>You are about to change a life-death system</small>
-        </p>
-        <div class="progress-bar" id="warn-bottom-border"></div>
+      <svg class="close-icon">
+        <use xlink:href="icons.svg#close-icon"></use>
+      </svg>
+      <svg
+        id="error-icon"
+        height="2em"
+        viewBox="0 0 512 512"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <path
+          d="M213.333333,3.55271368e-14 C331.136,3.55271368e-14 426.666667,95.5306667 426.666667,213.333333 C426.666667,331.136 331.136,426.666667 213.333333,426.666667 C95.5306667,426.666667 3.55271368e-14,331.136 3.55271368e-14,213.333333 C3.55271368e-14,95.5306667 95.5306667,3.55271368e-14 213.333333,3.55271368e-14 Z M262.250667,134.250667 L213.333333,183.168 L164.416,134.250667 L134.250667,164.416 L183.168,213.333333 L134.250667,262.250667 L164.416,292.416 L213.333333,243.498667 L262.250667,292.416 L292.416,262.250667 L243.498667,213.333333 L292.416,164.416 L262.250667,134.250667 Z"
+          id="Combined-Shape"
+        ></path>
+      </svg>
+      <p class="toaster-text">
+        <strong>Error!</strong>
+        <small>Oops, something went wrong</small>
+      </p>
+      <div class="progress-bar" id="error-bottom-border"></div>
     </div>
-    <!-- Error toaster -->
-    <div class="toaster-container">
-        <svg class="close-icon">
-            <use xlink:href="icons.svg#close-icon"></use>
-        </svg>
-        <svg id="error-icon" height="2em" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path
-                d="M213.333333,3.55271368e-14 C331.136,3.55271368e-14 426.666667,95.5306667 426.666667,213.333333 C426.666667,331.136 331.136,426.666667 213.333333,426.666667 C95.5306667,426.666667 3.55271368e-14,331.136 3.55271368e-14,213.333333 C3.55271368e-14,95.5306667 95.5306667,3.55271368e-14 213.333333,3.55271368e-14 Z M262.250667,134.250667 L213.333333,183.168 L164.416,134.250667 L134.250667,164.416 L183.168,213.333333 L134.250667,262.250667 L164.416,292.416 L213.333333,243.498667 L262.250667,292.416 L292.416,262.250667 L243.498667,213.333333 L292.416,164.416 L262.250667,134.250667 Z"
-                id="Combined-Shape"> </path>
-        </svg>
-        <p class="toaster-text">
-            <strong>Error!</strong>
-            <small>Oops, something went wrong</small>
-        </p>
-        <div class="progress-bar" id="error-bottom-border"></div>
-    </div>
-</body>
+
+    <!--
+    ***** Add the exit animation class *****
+    <script>
+      const onClose = (id) => {
+        let toaster = document.getElementById(id);
+        toaster.classList.add("fade-out-animation-class");
+        toaster.addEventListener("animationend", () => {
+          toaster.remove();
+        });
+      };
+    </script>
+    -->
+  </body>
 </html>
