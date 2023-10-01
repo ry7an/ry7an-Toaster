@@ -47,12 +47,13 @@ body {
 }
 
 .progress-bar {
-  width: 35%;
+  width: 0%;
   height: 0.3em;
   position: absolute;
   bottom: 0;
   left: 0.04em;
   border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
 }
 
 #success-bottom-border {
