@@ -12,7 +12,7 @@ body {
 .toaster-container {
   background-color: white;
   border-radius: 0.5rem;
-  width: 20%;
+  width: 20rem;
   display: flex;
   padding: 0px 10px;
   justify-items: center;
